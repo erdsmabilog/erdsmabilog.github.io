@@ -1,0 +1,101 @@
+/* Create custom color var */
+:root {
+    --main-color-off-white: #FFFDF4;
+}
+
+/* Reset all element margin and padding to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default bg-color to custom off-white */
+body {
+    background-color: var(--main-color-off-white);
+}
+
+/* Allow display flex-row */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Allow display flex-col */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Custom NavBar */
+nav {
+    width: 100%;
+    height: auto;
+    background-color: green;
+    justify-content: space-between;
+}
+
+/* Left side of NavBar */
+nav>#left {
+    margin: 1rem 0 1rem 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Anchor tags in left side of NavBar */
+nav>#left>a {
+    color: white;
+    text-decoration: none;
+}
+
+nav>#left>a:hover {
+    color: rgb(187, 187, 187);
+}
+
+/* Right side of NavBar */
+nav>#right {
+    text-align: center;
+    margin: 1rem 2rem 1rem 0;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Main Content */
+main {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Subsections */
+#subsection {
+    gap: 0.75rem;
+    max-width: 40em;
+}
+
+/* Headers in subsections */
+#subsection>h2 {
+    text-decoration: underline;
+}
+
+/* Assignments spacing */
+#assignments {
+    gap: 1.5rem;
+}
+
+/* Assignments */
+#assignments>a {
+    height: auto;
+    padding: 0.6rem;
+    border-color: var(--main-color-off-white);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: #10b110;
+    color: white;
+    text-decoration: none;
+}
+
+#assignments>a:hover {
+    background-color: #10b1109c;
+}
