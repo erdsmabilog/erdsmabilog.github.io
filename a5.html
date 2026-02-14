@@ -2,45 +2,47 @@
 <html>
 
 <head>
-	<title>Fancify Shamcify</title>
-	<link rel="stylesheet" href="index.css">
-	</link>
-	<script src="fancifymytext.js"></script>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Fancify Shamcify</title>
+  <link rel="stylesheet" href="index.css">
+  </link>
+  <script src="fancifymytext.js"></script>
 </head>
 
 <body class="flex-col">
   <!-- NavBar -->
-    <nav class="flex-row">
-        <p id="left"><a href="./index.html">&larr;</a></p>
-        <p id="right">California State University, Sacramento</p>
-    </nav>
+  <nav class="flex-row">
+    <p id="left"><a href="./index.html">&larr;</a></p>
+    <p id="right">California State University, Sacramento</p>
+  </nav>
 
   <!-- Main Content -->
-	<main>
+  <main>
 
-		<!-- Fancify TextArea Input -->
-		<h1>Fancify my Text</h1>
+    <!-- Fancify TextArea Input -->
+    <h1>Fancify my Text</h1>
 
-		<fieldset>
-			<!-- TextArea Input w/ "Text" Label -->
-			<legend>Text</legend>
-			<textarea rows="4" cols="30" id="textInput"></textarea>
-		</fieldset>
+    <fieldset>
+      <!-- TextArea Input w/ "Text" Label -->
+      <legend>Text</legend>
+      <textarea rows="4" cols="30" id="textInput"></textarea>
+    </fieldset>
 
-		<fieldset>
-			<!-- JS Functional Buttons -->
-			<button type="button" id="big" onclick=makeBigger()>Bigger!</button>
+    <fieldset>
+      <!-- JS Functional Buttons -->
+      <button type="button" id="big" onclick=makeBigger()>Bigger!</button>
 
-			<input type="radio" name="style" id="fancy" onchange=makeFancy()>
-			<label for="fancy">FancyShmancy</label>
+      <input type="radio" name="style" id="fancy" onchange=makeFancy()>
+      <label for="fancy">FancyShmancy</label>
 
-			<input type="radio" name="style" id="boring" onchange=makeBoring()>
-			<label for="boring">BoringBetty</label>
-		</fieldset>
+      <input type="radio" name="style" id="boring" onchange=makeBoring()>
+      <label for="boring">BoringBetty</label>
+    </fieldset>
 
-		<!-- Addtl. JS Functional Button -->
-		<button type="button" id="moo" onclick=makeUpper()>Moo!</button>
-	</main>
+    <!-- Addtl. JS Functional Button -->
+    <button type="button" id="moo" onclick=makeUpper()>Moo!</button>
+  </main>
 </body>
 
 </html>
